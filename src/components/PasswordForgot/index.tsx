@@ -4,13 +4,13 @@ import { PasswordForgetForm } from "./PasswordForgetForm";
 
 export const PasswordForget = () => (
   <div>
-    <h1>PasswordForget</h1>
+    <h1>Забыл пароль</h1>
     <PasswordForgetForm />
   </div>
 );
 
 export const PasswordForgetLink = () => (
   <p>
-    <Link to="/pw-forget">Forgot Password?</Link>
+    <Link to="/pw-forget">Забыли пароль?</Link>
   </p>
 );

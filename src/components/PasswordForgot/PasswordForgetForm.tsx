@@ -45,7 +45,7 @@ export class PasswordForgetForm extends React.Component {
           placeholder="Email Address"
         />
         <button disabled={isInvalid} type="submit">
-          Reset My Password
+          Сбросить мой пароль
         </button>
 
         {error && <p>{error.message}</p>}
