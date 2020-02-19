@@ -59,16 +59,16 @@ export class PasswordChangeForm extends React.Component<
           value={passwordOne}
           onChange={event => this.setStateWithEvent(event, "passwordOne")}
           type="password"
-          placeholder="New Password"
+          placeholder="Новый пароль"
         />
         <input
           value={passwordTwo}
           onChange={event => this.setStateWithEvent(event, "passwordTwo")}
           type="password"
-          placeholder="Confirm New Password"
+          placeholder="Потвердить новый пароль"
         />
         <button disabled={isInvalid} type="submit">
-          Reset My Password
+          Сбросить пароль
         </button>
 
         {error && <p>{error.message}</p>}

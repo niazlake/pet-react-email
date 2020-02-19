@@ -2,8 +2,8 @@ import * as React from "react";
 import { connect } from "react-redux";
 import { compose } from "recompose";
 
-import { PasswordChangeForm } from "../PasswordChange";
-import { PasswordForgetForm } from "../PasswordForget/PasswordForgetForm";
+import { PasswordChangeForm } from "../PasswordReset";
+import { PasswordForgetForm } from "../PasswordForgot/PasswordForgetForm";
 import { withAuthorization } from "../Session/withAuthorization";
 
 const AccountComponent = ({ authUser }: any) => (

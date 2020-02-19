@@ -5,14 +5,14 @@ import { SignUpForm } from "./SingUpForm";
 
 const SignUpComponent = () => (
   <div>
-    <h1>SignUp</h1>
+    <h1>Зарегаться</h1>
     <SignUpForm />
   </div>
 );
 
 export const SignUpLink = () => (
   <p>
-    Don't have an account? <Link to={routes.SIGN_UP}>Sign Up</Link>
+    У тебя еще нет аккаунта? <Link to={routes.SIGN_UP}>Зарегаться</Link>
   </p>
 );
 

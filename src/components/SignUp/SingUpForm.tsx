@@ -50,10 +50,8 @@ export class SignUpForm extends React.Component<
       .doCreateUserWithEmailAndPassword(email, passwordOne)
       .then((authUser: any) => {
 
-        // Create a user in your own accessible Firebase Database too
         db.doCreateUser(authUser.user.uid, username, email)
           .then(() => {
-
             this.setState(() => ({ ...SignUpForm.INITIAL_STATE }));
             history.push(routes.HOME);
           })
@@ -81,7 +79,7 @@ export class SignUpForm extends React.Component<
           value={username}
           onChange={event => this.setStateWithEvent(event, "username")}
           type="text"
-          placeholder="Full Name"
+          placeholder="Полное имя"
         />
         <input
           value={email}
@@ -93,16 +91,16 @@ export class SignUpForm extends React.Component<
           value={passwordOne}
           onChange={event => this.setStateWithEvent(event, "passwordOne")}
           type="password"
-          placeholder="Password"
+          placeholder="Пароль"
         />
         <input
           value={passwordTwo}
           onChange={event => this.setStateWithEvent(event, "passwordTwo")}
           type="password"
-          placeholder="Confirm Password"
+          placeholder="Потвердить пароль"
         />
         <button disabled={isInvalid} type="submit">
-          Sign Up
+          Зарегаться
         </button>
 
         {error && <p>{error.message}</p>}

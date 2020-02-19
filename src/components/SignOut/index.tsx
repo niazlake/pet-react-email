@@ -3,6 +3,6 @@ import { auth } from "../../firebase";
 
 export const SignOutButton = () => (
   <button type="button" onClick={auth.doSignOut}>
-    Sign Out
+    Выйти из почты
   </button>
 );

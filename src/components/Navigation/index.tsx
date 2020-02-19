@@ -12,13 +12,13 @@ const NavigationComponent = ({ authUser }: any) => (
 const NavigationAuth = () => (
   <ul>
     <li>
-      <Link to={routes.DEFAULT}>Landing</Link>
+      <Link to={routes.DEFAULT}>Default</Link>
     </li>
     <li>
-      <Link to={routes.HOME}>Home</Link>
+      <Link to={routes.HOME}>Страница просто</Link>
     </li>
     <li>
-      <Link to={routes.ACCOUNT}>Account</Link>
+      <Link to={routes.ACCOUNT}>Аккаунт</Link>
     </li>
     <li>
       <SignOutButton />
@@ -29,10 +29,10 @@ const NavigationAuth = () => (
 const NavigationNonAuth = () => (
   <ul>
     <li>
-      <Link to={routes.DEFAULT}>Landing</Link>
+      <Link to={routes.DEFAULT}>Default</Link>
     </li>
     <li>
-      <Link to={routes.SIGN_IN}>Sign In</Link>
+      <Link to={routes.SIGN_IN}>Войти в систему</Link>
     </li>
   </ul>
 );

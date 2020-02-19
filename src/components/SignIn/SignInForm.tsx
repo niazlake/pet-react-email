@@ -64,16 +64,16 @@ export class SignInForm extends React.Component<
           value={email}
           onChange={event => this.setStateWithEvent(event, "email")}
           type="text"
-          placeholder="Email Address"
+          placeholder="Email"
         />
         <input
           value={password}
           onChange={event => this.setStateWithEvent(event, "password")}
           type="password"
-          placeholder="Password"
+          placeholder="Пароль"
         />
         <button disabled={isInvalid} type="submit">
-          Sign In
+          Войти
         </button>
 
         {error && <p>{error.message}</p>}
